@@ -1,0 +1,272 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  background-color:black;
+  background-size: 100% 100%;
+  font-family:serif;
+  font-style:italic;
+}
+.header{
+  width: 100%;
+  position: relative;
+  opacity:0.;
+  top: 0;
+  border: 2px solid dodgerblue;
+  border-radius: 15px;
+}
+
+.header:hover{
+   box-shadow: 5px 9px  9px lightblue;
+}
+
+.container{
+  display:  flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  width: 100%;
+}
+.logo{
+  color: whitesmoke;
+  text-shadow: 1px 2px 2px ;
+  font-weight: 100;
+  font-size: 1.2em;
+
+}
+.icon{
+  fill: white;
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  z-index: 0;
+  display: none;
+  
+}
+
+nav{
+    display:  flex;
+    flex-direction:row;
+    gap:40px;
+  }
+  nav a {
+    text-decoration: none;
+    color: floralwhite;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-shadow: 1px 2px 2px ;
+
+  }
+  nav a:hover{
+    background-color: transparent ;
+    outline:  outset dodgerblue ;
+  }
+
+  .navicon{
+    fill: white;
+    position: relative;
+    width: 20px;
+    top:3px;
+  }
+  .navicon2{
+     fill: white;
+    position: relative;
+    width: 17px;
+    top:3px;
+  }
+
+
+  .layer {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+/*   top: 0;*/
+    bottom: 0;
+    z-index: 1;
+    display:none ;
+  }
+  .menu-box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+/*   top: 0;*/    
+    bottom: 0;
+    transition: .4s;
+    border: 1px solid white;
+    width: 50%;
+    height: 100%;
+    right: -500px;
+    background-color: black;
+    z-index: 2;
+    display: none;
+  }
+  .menu-box a{
+    font-size: 1.5em;
+    position: relative;
+    line-height: 3;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border:1px solid dodgerblue;
+    top: 60px;
+  }
+  .close-menu{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid dodgerblue;
+    color: white;
+    font-weight:bold ;
+    font-size: 2em;
+
+  }
+
+/*  container2*/
+
+.container2{
+  display: flex;
+  justify-content: space-around;  
+  margin: 20px;
+  border-bottom: 2px solid dodgerblue ;  
+  margin-top:60px ;
+  height: 100%;
+/*background-image:url(./web-devlopment.png) ;*/
+
+}
+
+.content{
+  height: 500px;
+}
+.content h1{
+  color: white;
+  margin-top:100px;
+  text-align: center;
+  line-height:1.6 ;
+  font-size: 2.9em;
+}
+
+.container3{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+  margin: 20px 20px 20px 20px;
+  border-bottom:  2px solid dodgerblue ;
+  }
+.photo{
+  width: 30%;
+  border-radius: 15px;
+}
+
+.content2{
+  color: white;
+  width: 50%;
+}
+
+.discript{
+  width: 80%;
+  height: 150px;
+  font-size: 1.2em;
+}
+.About{
+  line-height: 2;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.About:hover{
+  text-decoration:  underline dodgerblue;
+}
+.skills{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 0;
+  font-weight:  bold;
+  font-size: 1.2em;
+
+}
+
+.skills p:hover{
+    background-color: transparent ;
+/*    border: 2px solid transparent;*/
+    outline:  outset dodgerblue ;
+    cursor: pointer;
+}
+.box{
+  font-size: 1.2em;
+color: white;
+display: none;
+padding-top: 20px;
+line-height: 1.6;
+width: 80%;
+}
+
+.sk{
+  list-style-type:none ;
+}
+.one{
+  display: block;
+}
+.container4{
+  height: 100%;
+  margin: 20px 20px 20px 60px;
+  border-bottom:  2px solid dodgerblue ;
+  }
+
+.container4 h1 a{
+
+  color: white;
+   line-height: 4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container4 h1 a:hover{
+  text-decoration:  underline dodgerblue;
+
+}
+.works{
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.img{
+  border: 1px solid dodgerblue;
+  height: 500px;
+  width: 300px;
+}
+
+@media only screen and (max-width: 700px){
+   .container{
+    height: 50px;
+    width: 100%;
+   }
+
+    nav a{
+        display:none
+    }
+    
+    .icon{
+      display: block;
+      
+    }
+    .content{
+      height: 400px;
+    }
+    .content h1{
+      font-size:1.9em;
+    }
+    .logo{
+      font-size:1em;
+    } 
+    .skills{
+      display: block;
+    }
+    
+  }
+  
